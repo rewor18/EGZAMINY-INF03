@@ -1,0 +1,58 @@
+/* AUTOR @rewor18 2025 */
+
+* {
+    font-family: georgia;
+}
+
+body {
+    text-align: center;
+}
+
+.naglowek {
+    padding: 30px;
+    background: linear-gradient(to bottom, #A0522D, #F5deb3);
+}
+
+.menu {
+    background-color: wheat;
+    padding: 14px;
+}
+
+.glowny {
+    background-color: wheat;
+    padding: 50px;
+}
+
+.stopka {
+    padding: 30px;
+    background: linear-gradient(to bottom, #f5deb3, #a0522d);
+}
+
+a {
+    background-color: sienna;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table, td {
+    border: solid 1px sienna;
+    border-collapse: collapse;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+}
+
+td {
+    padding: 5px;
+}
+
+/* AUTOR @rewor18 2025 */

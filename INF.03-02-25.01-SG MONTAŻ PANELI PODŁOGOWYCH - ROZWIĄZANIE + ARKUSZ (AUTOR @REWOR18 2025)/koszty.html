@@ -1,0 +1,62 @@
+<!-- AUTOR @rewor18 2025 -->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montaż paneli podłogowych</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="naglowek">
+<img src="montaz_paneli.png" alt="firma usługowa">
+</header>
+
+<nav class="menu">
+<a href="index.html">Strona Główna</a>
+<a href="oferta.html">Oferta</a>
+<a href="koszty.html">Kalkulator kosztów</a>
+</nav>
+
+<main class="glowny">
+<h1>Kalkulator kosztów montażu</h1>
+<label for="Szerokość">Szerokość pomieszczenia [m]:</label>
+<input type="number" id="szerokosc">
+<label for="Długość">Długość pomieszczenia [m]:</label>
+<input type="number" id="dlugosc">
+<p>Typ panelu</p>
+<input type="radio" name="panel" id="laminowane" value="12"><label for="laminowane">Panele laminowane</label><br>
+<input type="radio" name="panel" id="winylowe" value="14"><label for="winylowe">Panele winylowe</label><br>
+<input type="radio" name="panel" id="deska" value="18"><label for="deska">Deska podłogowa</label><br>
+<button onclick="oblicz()">Oblicz</button>
+<p id="wyniki"></p>
+</main>
+
+<script>
+    function oblicz() {
+        let szerokosc=parseFloat(document.getElementById("szerokosc").value);
+
+        let dlugosc=parseFloat(document.getElementById("dlugosc").value);
+
+        let panel=document.querySelector('input[name="panel"]:checked');
+
+        if (isNaN(dlugosc) ||isNaN(szerokosc) ||!panel) {
+
+            document.getElementById("wynik").innerText=`Wprowadź poprawne dane.`;
+        }
+        let powierzchnia=dlugosc*szerokosc;
+        let koszt=powierzchnia*parseFloat(panel.value);
+
+        document.getElementById("wyniki").innerText=`Pole powierzchni pomieszczenia: ${powierzchnia} koszt montażu ${koszt}`};
+</script>
+
+<footer class="stopka">
+<h5>Autor strony: @rewor18</h5>
+</footer>
+
+</body>
+</html>
+
+<!-- AUTOR @rewor18 2025 -->

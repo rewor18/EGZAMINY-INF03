@@ -1,0 +1,8 @@
+AUTOR @REWOR18 2025
+
+Zapytanie 1: SELECT osoby.imie, osoby.nazwisko FROM osoby WHERE imie LIKE 'A%';
+Zapytanie 2: SELECT zadania.zadanie, zadania.data FROM zadania WHERE zadanie LIKE '%mebli%' ORDER BY data ASC;
+Zapytanie 3: SELECT o.nazwisko, COUNT(z.id_zadania) AS "Liczba zadań" FROM osoby o JOIN zadania z ON o.id_osoba = z.osoba_id GROUP BY o.nazwisko;
+Zapytanie 4: ALTER TABLE osoby DROP COLUMN osoby.telefon;
+
+AUTOR @REWOR18 2025
