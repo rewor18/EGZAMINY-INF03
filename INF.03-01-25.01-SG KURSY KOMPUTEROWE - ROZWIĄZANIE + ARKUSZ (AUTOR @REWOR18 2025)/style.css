@@ -1,0 +1,60 @@
+/* AUTOR @rewor18 2025 */
+
+* {
+    font-family: helvetica;
+}
+
+.strona {
+    background-color: #EAEAEA;
+}
+
+.menu {
+    background-color: #625B5B;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.zdjecie {
+    width: 100%;
+}
+
+.lista {
+    margin-left: 40px;
+    list-style-type: circle;
+}
+
+.menu > a {
+    font-weight: bold;
+    background-color: #EAEAEA;
+    color: #625B5B;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+.menu > a:hover {
+    background-color: #625B5B;
+    color: #EAEAEA;
+    border: solid 1px #EAEAEA;
+}
+
+.tabela {
+    border: dashed 1px #625B5B;
+    width: 60%;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.kontrolki {
+    margin: 5px;
+}
+
+footer {
+    background-color: #625B5B;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* AUTOR @rewor18 2025 */

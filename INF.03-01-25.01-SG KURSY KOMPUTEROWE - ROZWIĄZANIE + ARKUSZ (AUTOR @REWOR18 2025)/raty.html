@@ -1,0 +1,78 @@
+<!-- AUTOR @rewor18 2025 -->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursy komputerowe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="strona">
+
+<header class="naglowek">
+    <img class="zdjecie" src="baner.png" alt="kursy komputerowe">
+</header>
+
+<nav class="menu">
+    <a href="index.html">Strona główna</a>
+    <a href="raty.html">Koszt rat</a>
+    <a href="https://moje-szkolenia.pl/">Nasz partner</a>
+</nav>
+
+<main class="glowna">
+    <h3>Oblicz miesięczną ratę</h3>
+    <form id="formularz">
+        <label>
+            <input type="checkbox" name="kurs" id="kurs-react" value="5000" class="kontrolki">
+            Kurs React.js
+        </label><br>
+        <label>
+            <input type="checkbox" name="kurs" id="kurs-javascript" value="3000" class="kontrolki">
+            Kurs JavaScript
+        </label><br>
+        <label>Liczba rat:
+            <input type="number" name="raty" id="raty" class="kontrolki">
+        </label><br>
+        <select id="miasto" class="kontrolki">
+            <option>Warszawa</option>
+            <option>Katowice</option>
+            <option>Gdańsk</option>
+        </select><br>
+        <button type="button" onclick="oblicz()" class="kontrolki">Oblicz</button>
+        <p id="wynik"></p>
+    </form>
+</main>
+
+<script>
+    function oblicz() {
+        const miasto = document.getElementById('miasto').value;
+        
+        let kurs = 0;
+        if (document.getElementById('kurs-react').checked) {
+            kurs += parseFloat(document.getElementById('kurs-react').value);
+        }
+        if (document.getElementById('kurs-javascript').checked) {
+            kurs += parseFloat(document.getElementById('kurs-javascript').value);
+        }
+        
+        const liczbarat = document.getElementById('raty').value;
+
+        if (liczbarat > 0) {
+            const rata = (kurs / liczbarat).toFixed(2);
+            const wynik = `Kurs odbędzie się w ${miasto}. Koszt całkowity: ${kurs} zł. Płacisz ${liczbarat} rat po ${rata} zł.`;
+            document.getElementById('wynik').innerText = wynik;
+        } else {
+            alert("Podaj poprawną liczbę rat.");
+        }
+    }
+</script>
+
+<footer>
+    <p>Autor strony: @rewor18</p>
+</footer>
+
+</body>
+</html>
+
+<!-- AUTOR @rewor18 2025 -->
