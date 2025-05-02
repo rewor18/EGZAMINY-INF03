@@ -1,0 +1,71 @@
+/* AUTOR @rewor18 2025 */
+
+body {
+    font-family: "Bookman", serif;
+}
+
+.naglowek, .stopka {
+    background-color: indigo;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+.napis {
+    background-color: blueviolet;
+    padding: 10px;
+    text-align: right;
+    clear: both;
+}
+
+.lewy, .prawy {
+    background-color: lavender;
+    height: 500px;
+}
+
+.lewy {
+    width: 25%;
+    float: left;
+}
+
+.prawy {
+    width: 35%;
+    float: right;
+}
+
+.srodkowy {
+    background-color: ghostwhite;
+    text-align: center;
+    height: 500px;
+    width: 40%;
+    float: left;
+}
+
+img {
+    float: right;
+    width: 50%;
+    padding: 10px;
+}
+
+p {
+    color: white;
+    font-size: 150%;
+    font-style: italic;
+}
+
+table, form {
+    margin: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    border: solid 1px indigo;
+}
+
+td,th {
+    border: solid 1px indigo;
+    padding: 3px;
+}
+
+/* AUTOR @rewor18 2025 */
